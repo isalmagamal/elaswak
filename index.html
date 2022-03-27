@@ -35,11 +35,6 @@
 <!--java scripts-->
 	<script src="js/myScript.js"></script>
     
-    
-<!-------selectize------->
-     <script type="text/javascript" src="js/selectize.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/selectize.css" />
-    
 </head>
 
 
@@ -141,16 +136,7 @@
                       <input type="text" placeholder="" name="search">
                       <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                  </div>
-                      <div class="control-group">
-					<select id="select-beast2" class="demo-default" placeholder="ابحث عن منتج...">
-						<option value="">ابحث عن منتج....</option>
-						<option value="4">حليب</option>
-						<option value="1">مربى</option>
-						<option value="3">زبادي</option>
-						<option value="5">كادبوري</option>
-					</select>
-				    </div>
+                  </div>    
                 </div>
                 </div>
                 </div>
@@ -161,20 +147,10 @@
                 <div class="search-bar search-desktop">
                  <div class="search-container">
                     <form action="/action_page.php">
-                      <input id="search-inputt" type="text" placeholder="" name="search">
+                      <input type="text" placeholder="" name="search">
                       <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                  </div>
-                    <div class="control-group">
-					<select id="select-beast" class="demo-default" placeholder="ابحث عن منتج...">
-						<option value="">ابحث عن منتج....</option>
-						<option value="4">حليب</option>
-						<option value="1">مربى</option>
-						<option value="3">زبادي</option>
-						<option value="5">كادبوري</option>
-					</select>
-				    </div>
-				
+                  </div>    
                 </div>
                 </div>
             </div>
@@ -184,7 +160,54 @@
 
         <div class="hp-hero-section container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="search-filters">
+                    <p>تصنيف العروض</p>
+                    <div>
+                    <label class="checkbox-search">
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    العروض الجديدة
+                    </label>
+                    <label class="checkbox-search">كل العروض
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-search">العروض القديمة
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <div class="slider-range-wrap">
+                    <label class="price" for="amount">السعر: </label>
+                    <div id="slider-range"></div>
+                    <div class="slider-titles">
+                      <input type="text" id="amount-min" placeholder="الحد الأدنى" readonly style="border:0; font-weight:bold;">
+                      <input type="text" id="amount-max" placeholder="الحد الأقصى" readonly style="border:0; font-weight:bold;">
+                    </div>
+                   <button class="price-range-search" id="price-range-submit">تم</button></div>    
+                    <div>
+                    <label class="radio-search">الأحدث
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-search">الأقدم
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-search">من الأرخص للأغلى
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-search">من الأغلى للأرخص
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="col-md-9">
                 <div class="row">
                     <img class="hp-hero-section-img" src="img/sale-img.png">    
                 </div>
@@ -196,6 +219,7 @@
                         <a class="link-underline pink" href="#">قسم المنتجات</a>
                     </div>    
                 </div>
+                
                 </div>
             </div>
         </div>
@@ -527,9 +551,6 @@
           <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 <!----owl-carousel--->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js" integrity="sha512-JiDSvppkBtWM1f9nPRajthdgTCZV3wtyngKUqVHlAs0d5q72n5zpM3QMOLmuNws2vkYmmLn4r1KfnPzgC/73Mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
 $('.owl-one').owlCarousel({
@@ -576,19 +597,7 @@ $('.owl-one').owlCarousel({
       
   } );
   </script>
-
- <script>
-$("#select-beast").selectize({
-  create: true,
-  sortField: "text",
-});
-</script>
-<script>
-$("#select-beast2").selectize({
-  create: true,
-  sortField: "text",
-});
-</script>                   
+                    
 
 
 </body>

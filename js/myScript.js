@@ -6,26 +6,14 @@ $(document).ready(function(){
      $(".product-fav").on("click", function() {
     $(this).toggleClass("far");
     $(this).toggleClass("fas");    
-  }); 
-    
-    
-//    $("#search-inputt").on("click", function() {
-//    $(".search-bar-select .select-items").toggleClass("select-hide2");
-//  });
-//    
+  });
     
     
     
-//    $('.slider-category-name').hide();  
-//  $('.owl-one .item').click( function (s) {
-//    $(this).find('.slider-category-name').slideUp(200);  
-//    s.preventDefault();
-//      $('.owl-one .item').mouseleave( function (r) {
-//    $(this).find('.slider-category-name').slideDown(200);  
-//    s.preventDefault();
-//      
-//  });
-//  });
+    $('.slider-category-name').hide();  
+  $('.owl-one .item').hover( function () {
+    $(this).find('.slider-category-name').slideToggle(200);  
+  });
 
     
      $('.cat-menu-sign').on('click', function(e) {
