@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--style css-->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
+<!---fontawesome--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/all.css">
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!----google-fonts---->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<!---owl-carousel---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+<!--java scripts-->
+	<script src="js/myScript.js"></script>
+    
+</head>
+
+
+
+<body>
+	<div class="main-container">
+	<header>
+        <div class="top-bar">
+            <div class="container row">
+            <div class="top-bar-right col-6">
+                <div class="dropdown mobile-sign account-sign">
+                          <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onclick="this.blur();">
+                              محمود علي
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="account-settings.html">
+                                <i class="far fa-user client-menu-icon"></i>
+                                حسابي
+                                </a></li> 
+                              
+                              <li><a class="dropdown-item" href="track-orders.html">
+                                <img class="client-menu-icon" src="img/track-orders.png">
+                                تتبع الطلبات
+                                </a></li> 
+                              
+                              <li><a class="dropdown-item signout-item" href="#">
+                                <i class="fas fa-sign-out-alt client-menu-icon"></i>
+                                تسجيل الخروج
+                                </a></li>
+                          </ul>
+                        </div>     
+            </div>
+            <div class="top-bar-left col-6">
+                <div class="top-bar-social desktop-top-bar-left">
+                <a class="top-bar-links" href="tel:5069852647">
+                <i class="fas fa-phone-alt"></i>
+                506 985 26 47
+                </a>
+                <a class="top-bar-links" href="mailto:email@email.com">
+                <i class="fas fa-envelope"></i>
+                email@email.com
+                </a>
+                </div>
+                <div class="top-bar-social mobile-top-bar-left">
+                <a class="top-bar-links" href="tel:5069852647">
+                <i class="fas fa-phone-alt"></i>
+                </a>
+                <a class="top-bar-links" href="mailto:email@email.com">
+                <i class="fas fa-envelope"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container row">
+                <div class="col-3 header-icons">
+                <div class="desktop-menu">
+                <a href="#"><img class="header-signs cat-menu-sign" src="img/menu-sign.png"></a>
+                <div class="categories-menu categories-menu-hide">
+                    <ul class="right-cat-links">
+                        <li><a href="categories.html">منتجات الألبان</a></li>
+                        <li><a href="categories.html">مثلجات</a></li>
+                        <li><a href="categories.html">مأكولات</a></li>
+                        <li><a href="categories.html">مشروبات</a></li>
+                    </ul>    
+                    <ul class="left-cat-links">
+                        <li><a href="categories.html">مستلزمات الأطفال</a></li>
+                        <li><a href="categories.html">العناية الشخصية</a></li>
+                        <li><a href="categories.html">مستلزمات الغسيل</a></li>
+                        <li><a href="categories.html">مستلزمات النظافة</a></li>
+                    </ul>    
+                </div>
+                <a class="shopping-cart-wrap" href="#">
+                    <img class="header-signs shopping-cart-icon" src="img/shopping-cart.png">
+                    <p class="orders-quantity">1</p>
+                    
+                </a>
+                <div class="orders-store-icon orders-pop-hide">
+                    <div class="order-info-store-icon">
+                    <div class="order-store-icon-thumbnail"><img src="img/offer2.png"></div>
+                    <div class="name-price-order">
+                        <p class="name-pop"> جبنه داك + حليب جهينه</p>
+                        <p class="price-pop">35 SR </p>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+                <p class="total-quantity">الكمية</p>
+                <div id="field1">
+                <button type="button" id="sub" class="sub">-</button>
+                <input class="quantity-number" type="number" id="1" value="1" min="1" max="" />
+                <button type="button" id="add" class="add">+</button>
+                </div>
+                <p class="total-price">الاجمالي: <span>35 SR</span></p>
+                    <div class="pay-store-link">
+                    <a href="shopping-cart.html"><img src="img/shopping-cart.png">
+                        عرض أو تحرير عربة التسوق
+                        </a>
+                    <button class="pay-button" onclick="window.location.href='payment.html';">الدفع</button>
+                    </div>
+                </div>
+                <a href="favourites.html"><i class="far fa-heart header-signs"></i></a>
+                 <select class="language-select" onchange="location = this.value;">
+                        <option value="index.html" class="arabic-lang">
+                            AR
+                         </option>
+                        <option value="index-en.html">EN</option>
+                  </select>
+                </div>
+                <i class="fas fa-align-right mobile-menu-icon"></i>
+                <div class="mobile-menu">
+                <li class="cat-mobile"><a href="#"><img class="header-signs cat-menu-sign" src="img/menu-sign2.png">الفئات</a></li>
+                <div class="categories-menu-mobile categories-menu-hide">
+                    <ul class="right-cat-links">
+                        <li><a href="categories.html">منتجات الألبان</a></li>
+                        <li><a href="categories.html">مثلجات</a></li>
+                        <li><a href="categories.html">مأكولات</a></li>
+                        <li><a href="categories.html">مشروبات</a></li>
+                    </ul>    
+                    <ul class="left-cat-links">
+                        <li><a href="categories.html">مستلزمات الأطفال</a></li>
+                        <li><a href="categories.html">العناية الشخصية</a></li>
+                        <li><a href="categories.html">مستلزمات الغسيل</a></li>
+                        <li><a href="categories.html">مستلزمات النظافة</a></li>
+                    </ul>    
+                </div>
+                <li><a href="#"><img class="header-signs" src="img/shopping-cart.png">عربة التسوق</a></li>
+                <li><a href="favourites.html"><i class="far fa-heart header-signs"></i>المفضلة</a></li>
+                 <li><select class="language-select" onchange="location = this.value;">
+                        <option value="index.html" class="arabic-lang">
+                            AR
+                         </option>
+                        <option value="index-en.html">EN</option>
+                  </select></li>  
+                 <div class="search-bar search-mobile">
+                 <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>    
+                </div>
+                </div>
+                </div>
+                <div class="col-9 header-left">
+                <div class="logo-container">
+                    <a class="logo" href="index.html">Logo</a>
+                </div>
+                <div class="search-bar search-desktop">
+                 <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>    
+                </div>
+                </div>
+            </div>
+        </div>
+       
+	</header>
+        
+        
+    <div class="shopping-cart-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p class="shopping-cart-title">المنتجات</p>
+                    <div class="shopping-cart-wrapper">
+                    <div class="track-orders-section">
+                        <ul class="order-info-list">
+                        <li>الصوره</li>    
+                        <li>الاسم</li>    
+                        <li>السعر</li>    
+                        <li>الكمية</li>    
+                        </ul>
+                            <div class="row order">
+                            <div class="order-info order-thumbnail">
+                                <h6 class="order-info-mob-title">الصوره</h6>
+                                <figure>
+                                <img class="" src="img/offer2.png">
+                                </figure>
+                                </div>
+                            <div class="order-info order-number">
+                                <h6 class="order-info-mob-title">الاسم</h6>
+                                <p>منتج</p>
+                            </div>
+
+                            <div class="order-info order-price">
+                                <h6 class="order-info-mob-title">السعر</h6>
+                            <p>SR 130</p>
+                            </div>
+
+                            <div class="order-info order-payment-way">
+                                <h6 class="order-info-mob-title">الكمية</h6>
+                             <div id="field1">
+                                <button type="button" id="sub" class="sub">-</button>
+                                <input class="quantity-number" type="number" id="1" value="1" min="1" max="" />
+                                <button type="button" id="add" class="add">+</button>
+                                </div>
+                                </div>
+                            <div class="shopping-cart-buttons">
+                            <img src="img/close.png">
+                            <i class="fa-heart product-fav far"></i>  
+                            </div> 
+                            </div>
+                        
+                            <div class="row order">
+                            <div class="order-info order-thumbnail">
+                                <h6 class="order-info-mob-title">الصوره</h6>
+                                <figure>
+                                <img class="" src="img/offer2.png">
+                                </figure>
+                                </div>
+                            <div class="order-info order-number">
+                                <h6 class="order-info-mob-title">الاسم</h6>
+                                <p>منتج</p>
+                            </div>
+
+                            <div class="order-info order-price">
+                                <h6 class="order-info-mob-title">السعر</h6>
+                            <p>SR 130</p>
+                            </div>
+
+                            <div class="order-info order-payment-way">
+                                <h6 class="order-info-mob-title">الكمية</h6>
+                             <div id="field1">
+                            <button type="button" id="sub" class="sub">-</button>
+                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="" />
+                            <button type="button" id="add" class="add">+</button>
+                            </div>
+                                </div>
+                                
+                             <div class="shopping-cart-buttons">
+                            <img src="img/close.png">
+                            <i class="fa-heart product-fav far"></i>  
+                            </div> 
+
+                            </div>
+                          
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p class="shopping-cart-title">العروض</p>
+                    <div class="shopping-cart-wrapper">
+                    <div class="track-orders-section">
+                        <ul class="order-info-list">
+                        <li>الصوره</li>    
+                        <li>الاسم</li>    
+                        <li>السعر</li>    
+                        <li>الكمية</li>    
+                        </ul>
+                            <div class="row order">
+                            <div class="order-info order-thumbnail">
+                                <h6 class="order-info-mob-title">الصوره</h6>
+                                <figure>
+                                <img class="" src="img/offer2.png">
+                                </figure>
+                                </div>
+                            <div class="order-info order-number">
+                                <h6 class="order-info-mob-title">الاسم</h6>
+                                <p>منتج</p>
+                            </div>
+
+                            <div class="order-info order-price">
+                                <h6 class="order-info-mob-title">السعر</h6>
+                            <p>SR 130</p>
+                            </div>
+
+                            <div class="order-info order-payment-way">
+                                <h6 class="order-info-mob-title">الكمية</h6>
+                             <div id="field1">
+                                <button type="button" id="sub" class="sub">-</button>
+                                <input class="quantity-number" type="number" id="1" value="1" min="1" max="" />
+                                <button type="button" id="add" class="add">+</button>
+                                </div>
+                                </div>
+                            <div class="shopping-cart-buttons">
+                            <img src="img/close.png">
+                            <i class="fa-heart product-fav far"></i>  
+                            </div> 
+                            </div>
+                        
+                            <div class="row order">
+                            <div class="order-info order-thumbnail">
+                                <h6 class="order-info-mob-title">الصوره</h6>
+                                <figure>
+                                <img class="" src="img/offer2.png">
+                                </figure>
+                                </div>
+                            <div class="order-info order-number">
+                                <h6 class="order-info-mob-title">الاسم</h6>
+                                <p>منتج</p>
+                            </div>
+
+                            <div class="order-info order-price">
+                                <h6 class="order-info-mob-title">السعر</h6>
+                            <p>SR 130</p>
+                            </div>
+
+                            <div class="order-info order-payment-way">
+                                <h6 class="order-info-mob-title">الكمية</h6>
+                             <div id="field1">
+                            <button type="button" id="sub" class="sub">-</button>
+                            <input class="quantity-number" type="number" id="1" value="1" min="1" max="" />
+                            <button type="button" id="add" class="add">+</button>
+                            </div>
+                                </div>
+                                
+                             <div class="shopping-cart-buttons">
+                            <img src="img/close.png">
+                            <i class="fa-heart product-fav far"></i>  
+                            </div> 
+
+                            </div>
+                          
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row shopping-cart-pay-information">
+                <div class="shopping-cart-totel-pay">
+                    <p class="total-p-cart">الاجمالي</p>
+                    <div class="price-pay-div">
+                        <p class="total-price-cart">
+                        35 SR</p>
+                        <a class="btn go-pay" href="payment.html">الدفع</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+     
+
+    <div class="footer container-fluid">
+        <div class="footer-inner row container">
+            <div class="col-lg-4">
+               <h6 class="footer-title">شركة الأسواق</h6>
+                <p class="p-footer">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                    أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                    أكسير سيتاشن يللأمكو لابورأس نيسي</p>
+
+            </div>
+            <div class="col-lg-2">
+                <h6 class="footer-title">الفئات</h6>
+                <ul class="menu-footer">
+                    <li><a href="#">منتجات الألبان</a></li>
+                    <li><a href="#">مثلجات</a></li>
+                    <li><a href="#">مأكولات</a></li>
+                    <li><a href="#">مشروبات</a></li>
+                    <li><a href="#">مستلزمات الأطفال</a></li>
+                    <li><a href="#">العناية الشخصية</a></li>
+                    <li><a href="#">مستلزمات الغسيل</a></li>
+                    <li><a href="#">مستلزمات النظافة</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2">
+                <h6 class="footer-title">المساعدة</h6>
+                <ul class="menu-footer">
+                    <li><a href="#">من نحن</a></li>
+                   <li><a href="#">الشروط والأحكام</a></li>
+                   <li><a href="#">منتجات الألبان</a></li>
+                    <li><a href="#">مثلجات</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer-social-media">
+              <h6 class="footer-title">التواصل</h6>
+            <div class="footer-buttons">
+	                   <a href="#"><i class="fab fa-whatsapp social-media-footer"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-media-footer"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f social-media-footer"></i></a>
+            </div>
+            </div>
+        
+        </div>    
+        
+    </div>
+        
+    </div>
+<!----end of main container----->
+
+         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+          <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<!----owl-carousel--->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$('.owl-one').owlCarousel({
+    loop:true,
+    margin:3,
+    autoplay:true,
+    autoplayTimeout:3000,
+    nav:true,
+    dots:false,
+    rtl:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1025:{
+            items:4
+        }
+    }
+})
+</script>
+<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 1500,
+    step: 10,
+      values: [ 0, 1500 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "" + ui.values[ 0 ] + " " + ui.values[ 1 ] );
+        $( "#amount-min" ).val( "" + ui.values[ 0 ]);
+        $( "#amount-max" ).val(" " + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "SR " + $( "#slider-range" ).slider( "values", 0 ) +
+      " - SR " + $( "#slider-range" ).slider( "values", 1 ) );    
+      
+      $( "#amount-min" ).val( "" + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount-max" ).val("" + $( "#slider-range" ).slider( "values", 1 ) );
+      
+      
+  } );
+  </script>
+                    
+
+
+</body>
+</html>

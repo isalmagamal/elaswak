@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!--style css-->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
+<!---fontawesome--->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/all.css">
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!----google-fonts---->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<!---owl-carousel---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+<!--java scripts-->
+	<script src="js/myScript.js"></script>
+    
+    
+<!-------selectize------->
+     <script type="text/javascript" src="js/selectize.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/selectize.css" />
+    
+</head>
+
+
+
+<body>
+	<div class="main-container">
+	<header>
+        <div class="top-bar">
+            <div class="container row">
+            <div class="top-bar-right col-6">
+                <a class="top-bar-links" href="signin.html">تسجيل الدخول</a>    
+            </div>
+            <div class="top-bar-left col-6">
+                <div class="top-bar-social desktop-top-bar-left">
+                <a class="top-bar-links" href="tel:5069852647">
+                <i class="fas fa-phone-alt"></i>
+                506 985 26 47
+                </a>
+                <a class="top-bar-links" href="mailto:email@email.com">
+                <i class="fas fa-envelope"></i>
+                email@email.com
+                </a>
+                </div>
+                <div class="top-bar-social mobile-top-bar-left">
+                <a class="top-bar-links" href="tel:5069852647">
+                <i class="fas fa-phone-alt"></i>
+                </a>
+                <a class="top-bar-links" href="mailto:email@email.com">
+                <i class="fas fa-envelope"></i>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container row">
+                <div class="col-3 header-icons">
+                <div class="desktop-menu">
+                <a href="#"><img class="header-signs cat-menu-sign" src="img/menu-sign.png"></a>
+                <div class="categories-menu categories-menu-hide">
+                    <ul class="right-cat-links">
+                        <li><a href="categories.html">منتجات الألبان</a></li>
+                        <li><a href="categories.html">مثلجات</a></li>
+                        <li><a href="categories.html">مأكولات</a></li>
+                        <li><a href="categories.html">مشروبات</a></li>
+                    </ul>    
+                    <ul class="left-cat-links">
+                        <li><a href="categories.html">مستلزمات الأطفال</a></li>
+                        <li><a href="categories.html">العناية الشخصية</a></li>
+                        <li><a href="categories.html">مستلزمات الغسيل</a></li>
+                        <li><a href="categories.html">مستلزمات النظافة</a></li>
+                    </ul>    
+                </div>
+                <a href="#"><img class="header-signs shopping-cart-icon" src="img/shopping-cart.png"></a>
+                <div class="orders-store-icon orders-pop-hide">
+                    <div class="pay-store-link">
+                    <a href="shopping-cart.html"><img src="img/shopping-cart.png">
+                        عرض أو تحرير عربة التسوق
+                        </a>
+                    <button class="pay-button" onclick="window.location.href='payment.html';">الدفع</button>
+                    </div>
+                </div>
+                <a href="favourites.html"><i class="far fa-heart header-signs"></i></a>
+                 <select class="language-select" onchange="location = this.value;">
+                        <option value="index.html" class="arabic-lang">
+                            AR
+                         </option>
+                        <option value="index-en.html">EN</option>
+                  </select>
+                </div>
+                <i class="fas fa-align-right mobile-menu-icon"></i>
+                <div class="mobile-menu">
+                <li class="cat-mobile"><a href="#"><img class="header-signs cat-menu-sign" src="img/menu-sign2.png">الفئات</a></li>
+                <div class="categories-menu-mobile categories-menu-hide">
+                    <ul class="right-cat-links">
+                        <li><a href="categories.html">منتجات الألبان</a></li>
+                        <li><a href="categories.html">مثلجات</a></li>
+                        <li><a href="categories.html">مأكولات</a></li>
+                        <li><a href="categories.html">مشروبات</a></li>
+                    </ul>    
+                    <ul class="left-cat-links">
+                        <li><a href="categories.html">مستلزمات الأطفال</a></li>
+                        <li><a href="categories.html">العناية الشخصية</a></li>
+                        <li><a href="categories.html">مستلزمات الغسيل</a></li>
+                        <li><a href="categories.html">مستلزمات النظافة</a></li>
+                    </ul>    
+                </div>
+                <li><a href="#"><img class="header-signs" src="img/shopping-cart.png">عربة التسوق</a></li>
+                <li><a href="favourites.html"><i class="far fa-heart header-signs"></i>المفضلة</a></li>
+                 <li><select class="language-select" onchange="location = this.value;">
+                        <option value="index.html" class="arabic-lang">
+                            AR
+                         </option>
+                        <option value="index-en.html">EN</option>
+                  </select></li>  
+                 <div class="search-bar search-mobile">
+                 <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>    
+                </div>
+                </div>
+                </div>
+                <div class="col-9 header-left">
+                <div class="logo-container">
+                    <a class="logo" href="index.html">Logo</a>
+                </div>
+                <div class="search-bar search-desktop">
+                 <div class="search-container">
+                    <form action="/action_page.php">
+                      <input id="search-inputt" type="text" placeholder="" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                   <div class="control-group">
+					<label for="select-beast">Beast:</label>
+					<select id="select-beast" class="demo-default" placeholder="Select a person...">
+						<option value="">Select a person...</option>
+						<option value="4">Thomas Edison</option>
+						<option value="1">Nikola</option>
+						<option value="3">Nikola Tesla</option>
+						<option value="5">Arnold Schwarzenegger</option>
+					</select>
+				</div>
+				
+<!--
+                <div class="search-select-wrap">
+                <div class="search-bar-select custom-select">
+                          <select>
+                            <option value="0">اسم المنتج</option>
+                            <option value="1">مربى</option>
+                            <option value="2">حليب</option>
+                            <option value="3">كادبوري</option>
+                            <option value="4">زبادي</option>
+                            <option value="1">مربى</option>
+                            <option value="2">حليب</option>
+                            <option value="3">كادبوري</option>
+                            <option value="4">زبادي</option>
+                          </select>
+                        </div></div>
+-->
+                </div>
+                </div>
+            </div>
+        </div>
+       
+	</header>
+
+        <div class="hp-hero-section container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="row">
+                    <img class="hp-hero-section-img" src="img/sale-img.png">    
+                </div>
+                <div class="row links-container">
+                    <div class="col-lg-6 link-div">
+                        <a class="link-underline blue" href="#">قسم العروض</a>
+                    </div> 
+                    <div class="col-lg-6 link-div">
+                        <a class="link-underline pink" href="#">قسم المنتجات</a>
+                    </div>    
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="hp-second-section container">
+            <div class="title_lines">
+               <p class="title-a">العروض</p>
+            </div>
+            <div class="list-products row">
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <i class="far fa-heart product-fav"></i>
+                            <a class="" href="product.html"><img src="img/offer1.png"></a>
+                        </div>
+                        <a class="" href="product.html"><p class="product-name">3 شكولاته دايري ميلك</p></a>
+                        <p class="product-price">50 SR</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                        <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="product.html"><img src="img/offer2.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                            <a class="" href="product.html"><p class="product-name"> جبنه داك + حليب جهينه </p></a>
+                        <p class="product-price">35 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="product.html"><img src="img/offer3.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="product.html"><p class="product-name">3 جبنة كريم</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer4.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">زبادي + حليب</p></a>
+                        <p class="product-price">25 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer5.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">3 مربى</p></a>
+                        <p class="product-price">35 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer6.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">4 زبادي</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer7.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">3 حليب جهينه</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer8.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">جبنة داك + دايري ميلك</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/offer9.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">مربى + جبنة</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+            
+            </div>
+            <a class="btn shadow-none pink-btn" href="#">عرض الكل</a>
+        
+        </div>
+        
+        
+        <div class="hp-third-section">
+        <div class="title_lines">
+               <p class="title-a">الخدمات</p>
+        </div>
+        <div class="services-section container">
+            <div class=" row">
+            <div class="col-lg-4 service-div">
+                <img src="img/customer-support.png">
+                <p class="service-name">خدمة عملاء</p>
+            </div> 
+            <div class="col-lg-4 service-div">
+                <img src="img/delivery%20(3).png">
+                <p class="service-name">خدمة التوصيل</p>
+            </div> 
+            <div class="col-lg-4 service-div">
+                <img src="img/discount%20(1).png">
+                <p class="service-name">عروض</p>
+            </div>    
+            </div>
+        <div class="title_lines">
+               <p class="title-a">المنتجات</p>
+        </div>
+                    <div class="list-products row">
+                <div class="col-lg-4">
+                    <a class="" href="#"><div class="product-card">
+                        <div class="product-img">
+                            <img src="img/product1.png">
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <p class="product-name">شكولاته دايري ميلك</p>
+                        <p class="product-price">20 SR</p>
+                        </div></a>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product2.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name"> حليب جهينه </p></a>
+                        <p class="product-price">15 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product3.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">جبنة كريم</p></a>
+                        <p class="product-price">30 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product4.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">جبنة</p></a>
+                        <p class="product-price">25 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product5.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">زبادي</p></a>
+                        <p class="product-price">5 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product6.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">مربى</p></a>
+                        <p class="product-price">10 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product6.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">مربى</p></a>
+                        <p class="product-price">10 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product7.png"></a> 
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">جبنة داك</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a class="" href="#"><img src="img/product1.png"></a>
+                            <i class="far fa-heart product-fav"></i>
+                        </div>
+                        <a class="" href="#"><p class="product-name">دايري ميلك</p></a>
+                        <p class="product-price">50 SR</p>
+                        </div>
+                </div>
+            
+            </div>
+            <a class="btn shadow-none pink-btn" href="#">عرض الكل</a>
+        </div>
+        </div>
+        
+        
+        <div class="hp-forth-section">
+                <div class="owl-one owl-carousel owl-theme owl-container">
+                    <div class="item"><img class="slider-product" src="img/slider-img1.png">
+                        <div class="slider-category-name">
+                            <a href="categories.html">مأكولات</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img2.png">
+                          <div class="slider-category-name">
+                            <a href="categories.html">منتجات ألبان</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img3.png">
+                          <div class="slider-category-name">
+                            <a href="categories.html">العناية الشخصية</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img4.png">
+                      <div class="slider-category-name">
+                            <a href="categories.html">مثلجات</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img1.png">
+                      <div class="slider-category-name">
+                            <a href="categories.html">مأكولات</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img2.png">
+                      <div class="slider-category-name">
+                            <a href="categories.html">منتجات ألبان</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img3.png">
+                    <div class="slider-category-name">
+                            <a href="categories.html">العناية الشخصية</a>
+                        </div>
+                    </div>
+                    <div class="item"><img class="slider-product" src="img/slider-img4.png"> 
+                    <div class="slider-category-name">
+                            <a href="categories.html">مثلجات</a>
+                        </div>
+                    </div> 
+                </div>
+        
+        </div>
+        
+        
+        
+               
+        
+    <div class="footer container-fluid">
+        <div class="footer-inner row container">
+            <div class="col-lg-4">
+               <h6 class="footer-title">شركة الأسواق</h6>
+                <p class="p-footer">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                    أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                    أكسير سيتاشن يللأمكو لابورأس نيسي</p>
+
+            </div>
+            <div class="col-lg-2">
+                <h6 class="footer-title">الفئات</h6>
+                <ul class="menu-footer">
+                    <li><a href="#">منتجات الألبان</a></li>
+                    <li><a href="#">مثلجات</a></li>
+                    <li><a href="#">مأكولات</a></li>
+                    <li><a href="#">مشروبات</a></li>
+                    <li><a href="#">مستلزمات الأطفال</a></li>
+                    <li><a href="#">العناية الشخصية</a></li>
+                    <li><a href="#">مستلزمات الغسيل</a></li>
+                    <li><a href="#">مستلزمات النظافة</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2">
+                <h6 class="footer-title">المساعدة</h6>
+                <ul class="menu-footer">
+                    <li><a href="#">من نحن</a></li>
+                   <li><a href="#">الشروط والأحكام</a></li>
+                   <li><a href="#">منتجات الألبان</a></li>
+                    <li><a href="#">مثلجات</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer-social-media">
+              <h6 class="footer-title">التواصل</h6>
+            <div class="footer-buttons">
+	                   <a href="#"><i class="fab fa-whatsapp social-media-footer"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-media-footer"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f social-media-footer"></i></a>
+            </div>
+            </div>
+        
+        </div>    
+        
+    </div>
+        
+    </div>
+<!----end of main container----->
+
+         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+          <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<!----owl-carousel--->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js" integrity="sha512-JiDSvppkBtWM1f9nPRajthdgTCZV3wtyngKUqVHlAs0d5q72n5zpM3QMOLmuNws2vkYmmLn4r1KfnPzgC/73Mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$('.owl-one').owlCarousel({
+    loop:true,
+    margin:3,
+    autoplay:true,
+    autoplayTimeout:3000,
+    nav:true,
+    dots:false,
+    rtl:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1025:{
+            items:4
+        }
+    }
+})
+</script>
+<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 1500,
+    step: 10,
+      values: [ 0, 1500 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "" + ui.values[ 0 ] + " " + ui.values[ 1 ] );
+        $( "#amount-min" ).val( "" + ui.values[ 0 ]);
+        $( "#amount-max" ).val(" " + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "SR " + $( "#slider-range" ).slider( "values", 0 ) +
+      " - SR " + $( "#slider-range" ).slider( "values", 1 ) );    
+      
+      $( "#amount-min" ).val( "" + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount-max" ).val("" + $( "#slider-range" ).slider( "values", 1 ) );
+      
+      
+  } );
+  </script>
+
+ <script>
+$("#select-beast").selectize({
+  create: true,
+  sortField: "text",
+});
+</script>                   
+
+
+</body>
+</html>
